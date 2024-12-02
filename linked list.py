@@ -1,10 +1,10 @@
 class Node:
-    def _init_(self, data=None, next=None):
+    def __init__(self, data=None, next=None):
         self.data = data
         self.next = next
 
 class LinkedList:
-    def _init_(self):
+    def __init__(self):
         self.head = None
 
     def print(self):
@@ -86,10 +86,10 @@ class LinkedList:
             self.insert_at_end(data)
 
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     ll = LinkedList()
-    ll.insert_values(["banana","mango","grapes","orange"])
-    ll.insert_at(1,"blueberry")
+    ll.insert_values(["alpukat","mangga","kelengkeng","naga"])
+    ll.insert_at(1,"anggur")
     ll.remove_at(2)
     ll.print()
 
